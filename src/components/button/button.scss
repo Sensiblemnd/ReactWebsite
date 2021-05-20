@@ -1,0 +1,23 @@
+.button {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  font-size: 12px;
+  padding: 10px 16px;
+  &:focus {
+    outline: none;
+  }
+}
+.button {
+  color: #291d38;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  &:hover {
+    background-color: #ffab00;
+    color: #fff;
+  }
+}
