@@ -1,0 +1,17 @@
+.theme-button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+
+  &-icon {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--theme-page-text);
+    transition: color 0.5s ease-in-out, height 0.5s ease-in-out;
+  }
+}

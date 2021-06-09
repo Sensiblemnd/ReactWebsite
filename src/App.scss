@@ -1,46 +1,84 @@
+@import "./styles/mixins";
+@import "./styles/normalize";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+.light {
+  --theme-color: #383838;
+  --theme-page-background: #fff;
+  --theme-component-background-color: rgb(255, 255, 255);
+  --theme-page-text: #111;
+  --theme-hover-text: #6c7293;
+}
+
+.dark {
+  --theme-color: #fff;
+  --theme-page-background: #1c1f2b;
+  --theme-component-background-color: #191c24;
+  --theme-page-text: #fff;
+  --theme-hover-text: #fff;
+}
+
+:root {
+  --app-bg: #060415;
+
+  /*********************************
+   Text
+  *********************************/
+
+  --FontSize: 15px; /* The size of the font */
+  --Font: "Noto Sans JP", Arial, Helvetica, sans-serif; /* Any font on the system */
+  --FontStyle: uppercase; /* Set to [lowercase | uppercase | none ] */
+  --LetterSpacing: 3px; /* Set 3px or more ] */
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calculateRem(19);
+}
+
 body,
 html {
-  height: 100%;
+  display: block;
+  position: relative;
   width: 100%;
+  height: 100%;
   margin: 0;
+  font-family: var(--Font);
+}
+.app-root {
+  position: relative;
+  color: var(--theme-page-text);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--theme-page-background);
+  font-family: "Noto Sans JP", sans-serif;
+  overflow-y: hidden;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.app-wrapper {
+  position: relative;
+  color: var(--theme-page-text);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--theme-page-background);
+  font-family: "Noto Sans JP", sans-serif;
+  overflow-y: hidden;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .App {
-  text-align: center;
-  position: relative;
-  display: flex;
+  background-color: var(--theme-page-background);
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+// @media (prefers-reduced-motion: no-preference) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// }
+@import "./styles/header";
+@import "./styles/network-alert";
+@import "./styles/theme-button.scss";

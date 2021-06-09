@@ -1,0 +1,6 @@
+@use "sass:math"; // This is because im using Dart Sass
+// Function for converting a px based font-size to rem.
+
+@function calculateRem($size) {
+  @return #{math.div($size, 16) * 1rem};
+}

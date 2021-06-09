@@ -9,12 +9,10 @@ export default {
   component: Header,
 } as Meta;
 
-const Template: Story<HeaderProps> = (args) => <Header {...args} />;
+const Template: Story<HeaderProps> = (args) => <Header />;
 
 export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: { name: "asd" },
-};
+LoggedIn.args = {};
 
 export const LoggedOut = Template.bind({});
 LoggedOut.args = {};
