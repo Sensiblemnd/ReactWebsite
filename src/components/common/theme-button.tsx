@@ -5,10 +5,6 @@ import { motion } from "framer-motion";
 import BrightnessHigh from "@material-ui/icons/BrightnessHigh";
 import IconButton from "@material-ui/core/IconButton";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
-interface ThemeButtonProps {
-  toggleTheme: () => void;
-  theme: string;
-}
 
 const ThemeButton = () => {
   const { theme, dispatch } = useContext(AppContext);

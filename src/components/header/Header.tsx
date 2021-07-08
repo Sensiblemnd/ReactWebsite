@@ -12,13 +12,13 @@ export const Header: React.FC<HeaderProps> = () => (
       <nav>
         <ul>
           <li>
-            <a href="#">About</a>
+            <a href="#1">About</a>
           </li>
           <li>
-            <a href="#">Issues</a>
+            <a href="#2">Issues</a>
           </li>
           <li>
-            <a href="#">Documentation</a>
+            <a href="#3">Documentation</a>
           </li>
         </ul>
       </nav>

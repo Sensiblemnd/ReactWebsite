@@ -1,9 +1,9 @@
-import React from 'react';
-import { useNetworkState } from 'react-use';
+import React from "react";
+import { useNetworkState } from "react-use";
 
-import { motion } from 'framer-motion';
-import CloudIcon from '@material-ui/icons/Cloud';
-import CloudOffIcon from '@material-ui/icons/CloudOff';
+import { motion } from "framer-motion";
+import CloudIcon from "@material-ui/icons/Cloud";
+import CloudOffIcon from "@material-ui/icons/CloudOff";
 
 const NetworkAlert = () => {
   const networkState = useNetworkState();

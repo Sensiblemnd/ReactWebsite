@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import { useState, useEffect } from "react";
 import "./App.scss";
 import AppWrapper from "./containers/app-wrapper";
 import { AppProvider } from "./context/app-context";
-function App() {
+
+const App = () => {
   return (
     <AppProvider>
       <AppWrapper>
@@ -10,6 +11,6 @@ function App() {
       </AppWrapper>
     </AppProvider>
   );
-}
+};
 
 export default App;

@@ -16,7 +16,7 @@ type Action = { type: "TOGGLE_THEME" };
  | { type: 'success', results: HNResponse }
  | { type: 'failure', error: string }; */
 
-// 5. The reduceer - this is used to update the state, based on the action
+// 5. The reducer - this is used to update the state, based on the action
 export const AppReducer = (state: InitialStateType, action: Action) => {
   switch (action.type) {
     case "TOGGLE_THEME":

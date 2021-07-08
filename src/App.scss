@@ -49,6 +49,7 @@ html {
   height: 100%;
   margin: 0;
   font-family: var(--Font);
+  color: var(--theme-page-text);
 }
 .app-root {
   position: relative;
@@ -74,6 +75,7 @@ html {
 .App {
   background-color: var(--theme-page-background);
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  color: var(--theme-page-text);
 }
 
 // @media (prefers-reduced-motion: no-preference) {

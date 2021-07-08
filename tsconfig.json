@@ -16,5 +16,9 @@
     "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src"],
+
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
 }
