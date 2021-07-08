@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import "./App.scss";
 import AppWrapper from "./containers/app-wrapper";
 import { AppProvider } from "./context/app-context";
