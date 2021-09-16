@@ -1,5 +1,5 @@
 {
-  "name": "storybook-cra",
+  "name": "react-website",
   "version": "0.1.0",
   "private": false,
   "homepage": ".",
@@ -8,7 +8,7 @@
   "types": "dist/js/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "URL_OF_YOUR_REPOSITORY"
+    "url": "https://github.com/Sensiblemnd/ReactWebsite.git"
   },
   "scripts": {
     "build-storybook": "build-storybook -s public",
