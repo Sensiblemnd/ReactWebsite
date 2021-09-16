@@ -7,7 +7,7 @@ import "./header.css";
 export interface HeaderProps {}
 
 export const Header: React.FC<HeaderProps> = () => (
-  <header className="header">
+  <header className="header" data-testid="Header">
     <div className="header-nav">
       <nav>
         <ul>

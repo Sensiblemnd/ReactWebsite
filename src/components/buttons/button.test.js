@@ -1,17 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import {
-  getByLabelText,
-  getByText,
-  getByTestId,
-  queryByTestId,
-  // Tip: all queries are also exposed on an object
-  // called "queries" which you could import here as well
-  waitFor,
-} from "@testing-library/dom";
+
 import "@testing-library/jest-dom/extend-expect";
 
 //👇 Imports a specific story for the test
-import { Button } from "../button/Button";
+import { Button } from "./Button";
 
 it("renders the button in the primary state", () => {
   render(<Button label={"Button"} />);

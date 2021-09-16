@@ -9,6 +9,7 @@
   --theme-component-background-color: rgb(255, 255, 255);
   --theme-page-text: #111;
   --theme-hover-text: #6c7293;
+  --transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .dark {
@@ -50,6 +51,7 @@ html {
   margin: 0;
   font-family: var(--Font);
   color: var(--theme-page-text);
+  background-color: var(--theme-page-background);
 }
 .app-root {
   position: relative;
