@@ -1,4 +1,3 @@
-import React from "react";
 import { useNetworkState } from "react-use";
 
 import { motion } from "framer-motion";

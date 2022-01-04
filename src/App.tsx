@@ -1,14 +1,21 @@
-import React from "react";
 import "./App.scss";
-import AddPlayerButton from "./components/buttons/add-player-button";
 import AppWrapper from "./containers/app-wrapper";
 import { AppProvider } from "./context/app-context";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./containers/home";
+import History from "./containers/history";
+import Habits from "./containers/habits";
+
 const App = () => {
   return (
     <AppProvider>
       <AppWrapper>
-        <div className="App">dfssdfgsdfg</div>
-        <AddPlayerButton />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="my-habits" element={<Habits />} />
+          <Route path="history" element={<History />} />
+        </Routes>
       </AppWrapper>
     </AppProvider>
   );
