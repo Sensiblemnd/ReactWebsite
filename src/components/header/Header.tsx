@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import NetworkAlert from "../common/network-alert";
 import ThemeButton from "../common/theme-button";
@@ -12,13 +13,16 @@ export const Header: React.FC<HeaderProps> = () => (
       <nav>
         <ul>
           <li>
-            <a href="#1">About</a>
+            <Link to="/habits1">About</Link>
           </li>
           <li>
-            <a href="#2">Issues</a>
+            <Link to="settings">Settings</Link>
           </li>
           <li>
-            <a href="#3">Documentation</a>
+            <Link to="dashboard">dashboard</Link>
+          </li>
+          <li>
+            <Link to="history">history</Link>
           </li>
         </ul>
       </nav>
