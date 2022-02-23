@@ -1,7 +1,9 @@
 //TODO: Do somethinmg
-//FIXME: asdasdasd
-//WARNING: asdasd
-//[x]: asdasd
+/**
+ * Replace special characters in a string with their HTML entity equivalents.
+ * @param {string} str - the string to be parsed
+ * @returns The string with the replaced characters.
+ */
 export const parseString = (str: string) => {
   return String(str)
     .replace(/&/g, "&amp;")
