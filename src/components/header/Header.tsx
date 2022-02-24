@@ -13,7 +13,10 @@ export const Header: React.FC<HeaderProps> = () => (
       <nav>
         <ul>
           <li>
-            <Link to="/habits1">About</Link>
+            <Link to="/experiments">CSS Experiments</Link>
+          </li>
+          <li>
+            <Link to="/habits">About</Link>
           </li>
           <li>
             <Link to="settings">Settings</Link>

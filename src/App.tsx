@@ -10,6 +10,7 @@ import Habits from "./pages/habits";
 import Settings from "./pages/settings";
 import Dashboard from "./pages/dashboard";
 import { ReactQueryDevtools } from "react-query/devtools";
+import Experiments from "./pages/experiments";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="settings" element={<Settings />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="history" element={<History />} />
+            <Route path="experiments" element={<Experiments />} />
           </Routes>
         </AppWrapper>
 
